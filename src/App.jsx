@@ -133,7 +133,6 @@ const App = () => {
                 <th className=" px-4 py-2">Título</th>
                 <th className=" px-4 py-2">Descripción</th>
                 <th className=" px-4 py-2">Fecha</th>
-                {/* <th className=" px-4 py-2">Hora</th> */}
                 <th className=" px-4 py-2">Estado</th>
                 <th className=" px-4 py-2"></th>
               </tr>
@@ -153,9 +152,6 @@ const App = () => {
                     <td className="text-center px-4 py-2">
                       {task.date.toLocaleDateString()}
                     </td>
-                    {/* <td className="text-center px-4 py-2">
-                      {task.date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })}
-                    </td> */}
                     <td className="items-center px-4 py-2 flex justify-center">
                       <button
                         className={`flex items-center px-2 py-1 text-sm rounded-lg transition duration-300 ${task.status === "completada"
@@ -345,7 +341,7 @@ const App = () => {
       <footer className="bg-white left-0 bottom-0 fixed w-full  py-2">
         <div className="container mx-auto text-center">
           <p className="text-sm">
-            &copy; 2024 Duvan Serrano. | <a href="https://github.com/duvan29" className="text-blue-600 hover:underline">GitHub</a>
+            &copy; 2024 Duvan Serrano. | <a href="https://github.com/duvan29/to-do" className="text-blue-600 hover:underline">GitHub</a>
           </p>
         </div>
       </footer>
